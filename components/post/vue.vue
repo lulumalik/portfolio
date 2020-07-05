@@ -10,9 +10,19 @@
       </div>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-      <div v-for="(card, index) in 8" :key="index" class="px-4 py-4">
+      <div v-for="(card, index) in 8" @click="selectImage(`/assets/crowdsourcing/web/Web_${index + 1}.png`)" :key="index" class="px-4 py-4">
         <img :src="`/assets/crowdsourcing/web/Web_${index + 1}.png`" alt="image_vue" />
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    selectImage(e) {
+      this.$emit("select", e)
+    }
+  }
+}
+</script>

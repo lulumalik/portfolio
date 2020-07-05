@@ -22,7 +22,7 @@
                 v-if="card.img"
                 :src="card.img"
                 style="top:15px;"
-                :class=" index === 1 ? ' h-24 w-40 relative ' : 'h-32 w-32'"
+                :class=" index === 1 ? ' h-24 relative ' : 'h-32 w-32'"
                 class="mx-auto"
                 alt="images Card"
               />

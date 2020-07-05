@@ -28,7 +28,7 @@
         </div> -->
 
         <div
-          class="w-full flex-grow lg:flex lg:items-center lg:w-auto pt-6 lg:pt-0"
+          class="w-auto text-right flex-grow lg:flex lg:items-center lg:w-auto pt-0 lg:pt-0"
           id="nav-content"
         >
           <ul class="list-reset lg:flex justify-end flex-1 items-center">
