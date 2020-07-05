@@ -3,11 +3,16 @@
     <div class="mx-auto px-4 sm:px-8 py-2 text-center">
       <div class="text-center max-w-lg mx-auto mt-6">
         <div class="font-bold text-gray-600 block mx-auto rounded-sm">
+           <img class="h-32 w-32 rounded-full mx-auto mb-2" src="/assets/0.jpg" alt="avatar">
           <div style="font-size:30px;">Web Developer</div>
           <div style="font-size:20px;">Since 2019</div>
         </div>
         <div class="h-2 bg-gray-400 w-64 mt-4 block mx-auto rounded-sm"></div>
         <div class="h-2 bg-gray-400 w-48 mt-2 block mx-auto rounded-sm"></div>
+        <div  class="font-bold text-gray-600 block mx-auto rounded-sm mt-4">
+          <div>My name is Lulu Maulana Malik, i'm Full Stack Web Developer with Javascript as main skill and the framework that i can work in is Vue js, Nuxt js and Node js. hope this skill can help whatever problem can appear and fix it.</div>
+        
+        </div>
       </div>
 
       <div class="grid grid-cols-6 gap-4 items-start mt-8 mx-auto px-8">
@@ -59,9 +64,14 @@ export default {
   methods: {
     showDetails(path) {
       if (path === "linkedin") {
-        window.open('https://www.linkedin.com/in/lulu-maulana-malik-b84b2316b/', "_self")
-      } else if (path === 'nodejs') {
-        alert('Because nodejs only consist of data and logic, it cannot be displayed')
+        window.open(
+          "https://www.linkedin.com/in/lulu-maulana-malik-b84b2316b/",
+          "_self"
+        );
+      } else if (path === "nodejs") {
+        alert(
+          "Because nodejs only consist of data and logic, it cannot be displayed"
+        );
       } else {
         this.$router.push(path);
       }
