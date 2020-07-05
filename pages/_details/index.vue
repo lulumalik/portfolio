@@ -7,7 +7,6 @@
         </div>
       </modalData>
     </client-only>
-    <navbar />
 
     <keep-alive>
       <component v-bind:is="$route.params.details" @select="selectImage"></component>
@@ -16,14 +15,12 @@
 </template>
 
 <script>
-import navbar from "~/components/navbar";
 import cordova from "~/components/post/cordova";
 import nuxtjs from "~/components/post/nuxt";
 import vuejs from "~/components/post/vue";
 import modalData from "~/components/modal.vue";
 export default {
   components: {
-    navbar,
     cordova,
     nuxtjs,
     vuejs,
